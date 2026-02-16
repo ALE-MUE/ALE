@@ -55,7 +55,7 @@ import shutil
 PAGES = ["cfp", "index", "committee", "accepted", "invited", "program"]
 IMAGES = [os.path.join("images", "logo_cpss.png"), os.path.join("images", "logo_gesis_en.svg"), os.path.join("images", "gscl_en_light.svg"), os.path.join("images", "qixiang2.jpeg"), os.path.join("images", "paul.png")]
 STYLESHEETS = [os.path.join("css", "cpss2025.css")]
-TEMPLATES = [os.path.join("templates", "CPSS-2025-abstract-template.zip")]
+#TEMPLATES = [os.path.join("templates", "CPSS-2025-abstract-template.zip")]
 
 
 def include_file(infile, include_file, outfile):
@@ -107,8 +107,8 @@ if __name__ == "__main__":
         print(os.path.abspath(target))
         shutil.copyfile(image, target)
 
-    for template in TEMPLATES:
-        target = os.path.join(site, os.path.basename(template))
-        print(os.path.abspath(target))
-        shutil.copyfile(template, target)
+    #for template in TEMPLATES:
+    #    target = os.path.join(site, os.path.basename(template))
+    #    print(os.path.abspath(target))
+    #    shutil.copyfile(template, target)
 
