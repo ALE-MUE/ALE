@@ -2,3 +2,12 @@ domain: ale-mue.github.io       # if you want to force HTTPS, specify the domain
 url: https://ale-mue.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /ALE/                  # place folder name if the site is served in a subfolder
 
+# Site settings
+title: ALE
+#email: your-email@domain.com
+
+# Build settings
+markdown: kramdown
+
+# Jekyll theme
+theme: Freelancer
